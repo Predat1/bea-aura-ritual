@@ -33,7 +33,7 @@ const Stars = ({ count }: { count: number }) => (
 );
 
 const TestimonialsSection = () => (
-  <section className="py-24 px-6 fade-section" style={{ background: '#111009' }}>
+  <section className="py-24 px-6 fade-section bg-background">
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-6">
@@ -48,7 +48,7 @@ const TestimonialsSection = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {testimonials.map((t, i) => (
-          <div key={i} className="p-8 border border-primary/10 hover:border-primary/20 transition-all duration-500" style={{ background: '#0f0d08' }}>
+          <div key={i} className="p-8 border border-primary/10 hover:border-primary/20 transition-all duration-500 bg-card">
             <Stars count={t.stars} />
             <blockquote className="mt-6 text-foreground/60 text-base leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
               <span className="text-primary/40 text-2xl">« </span>

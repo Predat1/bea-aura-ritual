@@ -17,8 +17,8 @@ const CartDrawer = () => {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-full max-w-md z-[70] transition-transform duration-[350ms] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
-        style={{ background: '#0f0d08', fontFamily: "'Montserrat', sans-serif", transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)' }}
+        className={`fixed top-0 right-0 h-full w-full max-w-md bg-background z-[70] transition-transform duration-[350ms] ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        style={{ fontFamily: "'Montserrat', sans-serif", transitionTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)' }}
       >
         <div className="flex flex-col h-full">
           {/* Header */}

@@ -74,7 +74,7 @@ const HeroSection = () => (
         <div className="w-16 h-px bg-primary/40" />
       </div>
 
-      <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold leading-tight mb-6" style={{ color: '#C9A84C' }}>
+      <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold leading-tight mb-6 text-primary">
         Le secret des femmes{' '}
         <em className="italic font-normal">qui rayonnent</em>
       </h1>
