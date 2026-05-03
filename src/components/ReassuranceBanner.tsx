@@ -6,10 +6,10 @@ const items = [
 ];
 
 const ReassuranceBanner = () => (
-  <section className="py-4 overflow-hidden bg-secondary/30" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+  <section className="py-6 overflow-hidden bg-couleur-1 shadow-inner">
     <div className="flex animate-marquee whitespace-nowrap">
       {[...items, ...items, ...items, ...items].map((item, i) => (
-        <span key={i} className="mx-8 text-sm tracking-[0.25em] uppercase text-primary/80 font-light">
+        <span key={i} className="mx-12 text-sm tracking-[0.3em] uppercase text-gold font-bold">
           {item}
         </span>
       ))}

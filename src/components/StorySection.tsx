@@ -36,19 +36,19 @@ const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
 };
 
 const StorySection = () => (
-  <section id="histoire" className="py-24 px-6 fade-section bg-background">
+  <section id="histoire" className="py-24 px-6 fade-section" style={{ backgroundColor: 'var(--fond-secondaire)' }}>
     <div className="max-w-6xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Text */}
         <div>
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-px bg-primary/30" />
-            <span className="text-primary/50 text-xs tracking-[0.3em] uppercase" style={{ fontFamily: "'Montserrat', sans-serif" }}>Notre histoire</span>
+            <div className="w-12 h-px bg-couleur-1/30" />
+            <span className="text-couleur-1 text-xs tracking-[0.3em] uppercase font-bold">Notre histoire</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-primary mb-8">
-            Fait avec amour,<br /><em className="italic font-normal">pensé pour vous</em>
+          <h2 className="text-3xl sm:text-4xl font-semibold text-texte-dark mb-8">
+            Fait avec amour,<br /><em className="italic font-normal accent-font">pensé pour vous</em>
           </h2>
-          <div className="space-y-5 text-foreground/60 text-lg leading-relaxed" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
+          <div className="space-y-6 text-texte-muted text-lg leading-relaxed accent-font">
             <p>
               Chaque savon est fabriqué à la main, avec des ingrédients soigneusement sélectionnés et une intention positive déposée à chaque étape de la création.
             </p>
@@ -62,25 +62,29 @@ const StorySection = () => (
         </div>
 
         {/* Ornament + counters */}
-        <div className="flex flex-col items-center gap-12">
+        <div className="flex flex-col items-center gap-16">
           {/* Decorative element */}
-          <div className="relative w-64 h-64 flex items-center justify-center">
-            <div className="absolute inset-0 border border-primary/15 rotate-45" />
-            <div className="absolute inset-6 border border-primary/10 rotate-45" />
-            <div className="absolute inset-12 border border-primary/5 rotate-45" />
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-primary/40">
+          <div className="relative w-72 h-72 flex items-center justify-center">
+            <div className="absolute inset-0 border border-couleur-1/10 rounded-full animate-spin-slow" />
+            <div className="absolute inset-6 border border-couleur-3/20 rounded-full" />
+            <div className="absolute inset-12 border border-gold/10 rounded-full" />
+            <svg width="60" height="60" viewBox="0 0 40 40" fill="none" className="text-gold/60">
               <path d="M20 2l4.5 13.5L38 20l-13.5 4.5L20 38l-4.5-13.5L2 20l13.5-4.5L20 2z" fill="currentColor" />
             </svg>
+            {/* Constellation dots */}
+            <div className="absolute top-0 left-1/2 w-2 h-2 bg-gold/40 rounded-full" />
+            <div className="absolute bottom-10 right-10 w-1.5 h-1.5 bg-couleur-1/40 rounded-full" />
+            <div className="absolute top-20 left-4 w-1 h-1 bg-gold/60 rounded-full" />
           </div>
 
           {/* Counters */}
-          <div className="flex gap-8 sm:gap-12">
+          <div className="grid grid-cols-3 gap-8 sm:gap-16">
             {stats.map((s, i) => (
               <div key={i} className="text-center">
-                <div className="text-3xl sm:text-4xl font-semibold text-primary mb-1">
+                <div className="text-3xl sm:text-4xl font-bold text-couleur-2 mb-2">
                   <Counter target={s.value} suffix={s.suffix} />
                 </div>
-                <div className="text-foreground/40 text-xs tracking-[0.15em] uppercase" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                <div className="text-texte-muted text-[10px] tracking-[0.2em] uppercase font-bold leading-tight">
                   {s.label}
                 </div>
               </div>
