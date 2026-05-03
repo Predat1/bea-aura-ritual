@@ -36,7 +36,7 @@ const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
 };
 
 const StorySection = () => (
-  <section id="histoire" className="py-24 px-6 fade-section" style={{ background: '#0a0805' }}>
+  <section id="histoire" className="py-24 px-6 fade-section bg-background">
     <div className="max-w-6xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Text */}

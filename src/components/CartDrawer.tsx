@@ -41,7 +41,7 @@ const CartDrawer = () => {
               items.map(item => (
                 <div key={item.id} className="flex gap-4 border-b border-primary/10 pb-5">
                   {/* Mini placeholder */}
-                  <div className="w-16 h-16 flex-shrink-0 flex items-center justify-center border border-primary/15" style={{ background: 'linear-gradient(135deg, #1a1508, #0a0805)' }}>
+                  <div className="w-16 h-16 flex-shrink-0 flex items-center justify-center border border-primary/15 bg-secondary/50">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-primary/30">
                       <path d="M8 2l1.5 4.5L14 8l-4.5 1.5L8 14l-1.5-4.5L2 8l4.5-1.5L8 2z" fill="currentColor" />
                     </svg>

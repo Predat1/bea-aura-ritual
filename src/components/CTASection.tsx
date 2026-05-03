@@ -1,5 +1,5 @@
 const CTASection = () => (
-  <section id="contact" className="py-24 px-6 fade-section relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #0f0d08 0%, #0a0805 50%, #111009 100%)' }}>
+  <section id="contact" className="py-24 px-6 fade-section relative overflow-hidden bg-background">
     {/* Decorative elements */}
     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
       <div className="w-96 h-96 border border-primary/5 rotate-45" />

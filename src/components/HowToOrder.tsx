@@ -5,7 +5,7 @@ const steps = [
 ];
 
 const HowToOrder = () => (
-  <section className="py-24 px-6 fade-section" style={{ background: '#0a0805' }}>
+  <section className="py-24 px-6 fade-section bg-background">
     <div className="max-w-5xl mx-auto">
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-6">

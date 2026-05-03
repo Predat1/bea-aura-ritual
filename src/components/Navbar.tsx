@@ -9,6 +9,8 @@ const navLinks = [
   { label: 'Contact', href: '#contact' },
 ];
 
+import { ThemeToggle } from './ThemeToggle';
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -23,7 +25,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-[#0a0805]/95 backdrop-blur-md border-b border-primary/20' : 'bg-transparent'
+        scrolled ? 'bg-background/95 backdrop-blur-md border-b border-primary/20' : 'bg-transparent'
       }`}
       style={{ fontFamily: "'Montserrat', sans-serif" }}
     >
@@ -42,6 +44,8 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
+          <ThemeToggle />
+          
           {/* Cart */}
           <button onClick={toggleCart} className="relative text-foreground hover:text-primary transition-colors" aria-label="Panier">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -67,7 +71,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div className={`md:hidden overflow-hidden transition-all duration-500 ${mobileOpen ? 'max-h-80' : 'max-h-0'}`}>
-        <div className="px-6 pb-6 flex flex-col gap-4 bg-[#0a0805]/95 backdrop-blur-md">
+        <div className="px-6 pb-6 flex flex-col gap-4 bg-background/95 backdrop-blur-md">
           {navLinks.map(l => (
             <a key={l.href} href={l.href} onClick={() => setMobileOpen(false)} className="text-sm font-light tracking-widest uppercase text-foreground/70 hover:text-primary transition-colors">
               {l.label}

@@ -32,7 +32,7 @@ const rituals = [
 ];
 
 const RitualsSection = () => (
-  <section id="rituels" className="py-24 px-6 fade-section" style={{ background: '#0a0805' }}>
+  <section id="rituels" className="py-24 px-6 fade-section bg-background">
     <div className="max-w-6xl mx-auto text-center">
       <div className="flex items-center justify-center gap-4 mb-6">
         <div className="w-12 h-px bg-primary/30" />

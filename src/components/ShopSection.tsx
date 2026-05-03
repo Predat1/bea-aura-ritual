@@ -17,7 +17,7 @@ const ShopSection = () => {
   const filtered = activeFilter === 'all' ? products : products.filter(p => p.category === activeFilter);
 
   return (
-    <section id="boutique" className="py-24 px-6 fade-section" style={{ background: '#111009' }}>
+    <section id="boutique" className="py-24 px-6 fade-section bg-secondary/50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
@@ -55,11 +55,10 @@ const ShopSection = () => {
           {filtered.map(product => (
             <article
               key={product.id}
-              className="group border border-primary/10 hover:border-primary/30 transition-all duration-500 hover:-translate-y-1.5"
-              style={{ background: 'linear-gradient(180deg, #0f0d08 0%, #0a0805 100%)' }}
+              className="group border border-primary/10 hover:border-primary/30 transition-all duration-500 hover:-translate-y-1.5 bg-card"
             >
               {/* Placeholder image */}
-              <div className="relative aspect-square overflow-hidden" style={{ background: 'linear-gradient(135deg, #1a1508 0%, #0a0805 50%, #1a1508 100%)' }}>
+              <div className="relative aspect-square overflow-hidden bg-secondary/30">
                 <div className="absolute inset-0 flex items-center justify-center p-6">
                   <span className="text-center text-primary/40 text-lg font-medium" style={{ fontFamily: "'Playfair Display', serif" }}>
                     {product.name}

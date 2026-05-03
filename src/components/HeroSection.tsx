@@ -62,7 +62,7 @@ const GoldParticles = () => {
 };
 
 const HeroSection = () => (
-  <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: '#0a0805' }}>
+  <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
     <GoldParticles />
     <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
       {/* Ornament */}
